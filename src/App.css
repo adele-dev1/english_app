@@ -1,0 +1,137 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */ 
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+/* 全体レイアウト */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* ヘッダー */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* チャットエリア */
+.chat-container {
+  flex: 1;
+  top: 80px;
+  margin-top: 200px; /* ヘッダーの高さ分 */
+  margin-bottom: 80px; /* フッターの高さ分 */
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ユーザーのメッセージ */
+.user-message {
+  background: #dcf8c6;
+  align-self: flex-end;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  margin: 5px;
+}
+
+/* AIのメッセージ */
+.ai-message {
+  background: #ffffff;
+  align-self: flex-start;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  margin: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* フッター */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* 入力ボックス */
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 送信ボタン */
+button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
